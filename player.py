@@ -136,6 +136,7 @@ class Gamer(Bomberman):
         self.blocked = [False, False, False, False]
         self.wait = []
 
+    # todo dokończyć automatyczne sterowanie postaci przez komputer
     def ai_move(self, mapa, parent):
         opp_index, opp_odl_x, opp_odl_y = self.near_opp(parent.players)
         bomb_index, bomb_odl_x, bomb_odl_y = self.near_bomb(parent.obiekty)

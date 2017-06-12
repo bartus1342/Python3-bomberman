@@ -3,6 +3,7 @@ from PyQt5.QtGui import QFont
 from PyQt5.QtCore import Qt, QObject
 from PyQt5.QtNetwork import QTcpServer, QTcpSocket, QNetworkInterface, QHostAddress
 
+# todo dokończyć cały system multiplayer(łączenie po IP, synchronizacja gry)
 class Connect(QWidget):
     def __init__(self, parent):
         super(Connect, self).__init__()

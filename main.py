@@ -40,7 +40,7 @@ class MainWindow(QMainWindow):
         self.setCentralWidget(self.screen)
         self.canvas = QGraphicsScene()
         self.canvas.setSceneRect(0, 0, 672, 672)
-        # todo ekran startowy, zamiast białego tła
+        # todo stwórz ekran startowy
         self.screen.setScene(self.canvas)
         self.auto = False
         self.running = False
@@ -49,6 +49,7 @@ class MainWindow(QMainWindow):
     def close_action(self):
         sys.exit(0)
 
+    # todo stwórz system multiplayer
     def multi_action(self):
         self.multi_window = Connect(self)
         self.multi_window.show()
